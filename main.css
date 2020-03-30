@@ -7,7 +7,7 @@ body{
 }
 
 .main{
-    background-color: red;
+    background-color: black;
     height: 100vh;
     background-image: url("./assets/cover.jpg");
     background-attachment: fixed;
@@ -17,6 +17,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     
 }
 
@@ -64,10 +65,6 @@ body{
     font-weight: 900;
 }
 
-.darkerbgclr{
-    background-color: rgba(0,0,0,0.5);
-}
-
 .buttonNeon:hover{
     background-color: #0ff;
     color: black;   
@@ -89,14 +86,12 @@ body{
 }
 
 .card{
-    padding: 20px;
-    background-color: #444;
+    border-radius: 20px;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    border-radius: 0.3em;
-    min-height: 200px;
+
 }
 
 .features{
@@ -108,6 +103,27 @@ body{
 
 .features > li{
     margin: 1em;
+}
+
+.beginer{
+    /* background-image: url(./assets/beginer.jpeg); */
+    background-color: #333;
+    
+}
+
+.pricingDiv{
+    justify-self: start;
+}
+
+.overlay{
+    padding: 2em 1em;
+    /* background-color: rgba(0,0,0,0.8); */
+    flex-grow: 1;
+    border-radius: 10px;
+    border-color: chartreuse;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    justify-content: start;
 }
 
 @media(min-width:600px){
@@ -125,6 +141,17 @@ body{
 
 .heading-3{
     font-size: 2em;
+    font-weight: 900;
+}
+
+.heading-2{
+    font-size: 4em;
+    font-weight: 900;
+}
+
+.heading-1{
+    font-size: 6em;
+    font-weight: 900;
 }
 
 .center{
@@ -135,10 +162,49 @@ body{
     font-size: 0.5em;
 }
 
+.subtitle-2{
+    font-size: 1em;
+}
+
+.subtitle-1{
+    font-size: 1.5em;
+}
+
 .red{
     background-color: red;
 }
 
 .spaced{
     padding: 20px;
+}
+
+.darken{
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+
+.btn{
+    
+    padding: 10px;
+    border-radius:5px;
+
+}
+
+.yellow{
+    background-color: yellow;
+    color: black;
+}
+
+.green{
+    background-color: rgb(106, 219, 0);
+}
+
+.desc{
+    font-weight: lighter;
+}
+
+.offer{
+    align-self: start;
+    justify-self: start;
 }
