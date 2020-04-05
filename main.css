@@ -133,9 +133,8 @@ body{
 /* _____ GALLERY ________ */
 
 .gallery{
-    display: grid;
+  display: grid;
   gap: 1rem;
-
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-auto-rows: 240px;
 }
@@ -149,20 +148,29 @@ body{
     background-position: center;
 }
 
+
+
+
+
+
+
+/* _________ TESTIMONIALS ____________ */
+
 .testimonialContainer{
-    height: auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-auto-rows: 240px;
  }
  
  .testimonial{
-     width: 350px;
-     height: 300px;
      background-color: #fff;
  }
  
  .textMain{
      padding: 1em;
      color: black;
-     margin-bottom: 2em;
+     padding-bottom: 2em;
      
  }
  
@@ -186,7 +194,7 @@ body{
  }
 
 
- 
+
 @media(min-width:600px){
     .pricing{
         grid-template-columns: repeat(3, 1fr);
