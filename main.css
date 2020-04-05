@@ -126,10 +126,43 @@ body{
     justify-content: start;
 }
 
+.gallery{
+    display: grid;
+  gap: 1rem;
+
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-auto-rows: 240px;
+}
+
+
+
+.gallery div{
+    background-color: red;
+    background-image: url(./assets/gymMain.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+
 @media(min-width:600px){
     .pricing{
         grid-template-columns: repeat(3, 1fr);
     }
+    /* .gallery{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    } */
+    .span-square{
+        grid-row: span 2 / auto;
+        grid-column: span 2;
+    }
+    
+    .span-long{
+        grid-row: span 2 / auto;
+    }
+    
+    /* .span-wide{
+        grid-column: span 2 / auto;
+    } wide is fucking up the layout*/
 }
 
 
