@@ -149,7 +149,44 @@ body{
     background-position: center;
 }
 
+.testimonialContainer{
+    height: auto;
+ }
+ 
+ .testimonial{
+     width: 350px;
+     height: 300px;
+     background-color: #fff;
+ }
+ 
+ .textMain{
+     padding: 1em;
+     color: black;
+     margin-bottom: 2em;
+     
+ }
+ 
+ .profile{
+     background-color: black;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 2em;
+     border-top: 5px solid rgb(255, 187, 0);
+ }
+ 
+ .img{
+     width: 5em;
+     height: 5em;
+     background-size: cover;
+     border-radius: 5em;
+     margin-bottom: 1em;
+     margin-top: -4.5em;
+ }
 
+
+ 
 @media(min-width:600px){
     .pricing{
         grid-template-columns: repeat(3, 1fr);
