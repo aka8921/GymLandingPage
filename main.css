@@ -129,6 +129,9 @@ body{
     justify-content: start;
 }
 
+
+/* _____ GALLERY ________ */
+
 .gallery{
     display: grid;
   gap: 1rem;
@@ -141,7 +144,7 @@ body{
 
 .gallery div{
     background-color: red;
-    background-image: url(./assets/gymMain.jpeg);
+    background-image: url(./assets/cover.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -243,4 +246,8 @@ body{
 .offer{
     align-self: start;
     justify-self: start;
+}
+
+.light{
+    font-weight: 100;
 }
