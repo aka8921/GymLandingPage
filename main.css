@@ -159,12 +159,13 @@ body{
 .testimonialContainer{
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  grid-auto-rows: 240px;
  }
  
  .testimonial{
      background-color: #fff;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
  }
  
  .textMain{
@@ -214,10 +215,15 @@ body{
     /* .span-wide{
         grid-column: span 2 / auto;
     } wide is fucking up the layout*/
+
+    .testimonialContainer{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
 }
 
 
 /* General */
+
 
 .container{
     padding: 10px 5%;
@@ -259,7 +265,7 @@ body{
 }
 
 .spaced{
-    padding: 20px;
+    padding: 3em 0;
 }
 
 .darken{
