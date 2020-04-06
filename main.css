@@ -196,6 +196,60 @@ body{
 
 
 
+ /* _____________ FOOTER _________________ */
+
+ .footer{
+     min-height: 100vh;
+     background-color: rgb(10, 0, 14);
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+     padding: 2em;
+ }
+
+ .footer-head{
+     align-self: baseline;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+}
+ .footer-sections{
+     display: grid;
+     gap: 5em;
+     align-self: stretch;
+ }
+ .footer-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: flex-start;
+    color: white;
+ }
+
+ .footer-card{
+    align-self: stretch;
+    /* background-color: rgb(255, 0, 221); */
+    background-image:
+    linear-gradient(
+      to left, 
+      rgb(131, 0, 102), rgb(163, 19, 144)
+    );
+    padding: 3em;
+    border-radius: 1em;
+ }
+
+ .footer-footer{
+     display: flex;
+     justify-content: space-around;
+     align-self: stretch;
+ }
+
+ .footer-logo{
+     width: 2em;
+     height: 2em;
+    background-size: cover;
+    }
+
 @media(min-width:600px){
     .pricing{
         grid-template-columns: repeat(3, 1fr);
@@ -218,6 +272,10 @@ body{
 
     .testimonialContainer{
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .footer-sections{
+        grid-template-columns: repeat(3 ,1fr);
     }
 }
 
