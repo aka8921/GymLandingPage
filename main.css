@@ -201,9 +201,8 @@ body{
  .footer{
      min-height: 100vh;
      background-color: rgb(10, 0, 14);
-     display: flex;
-     flex-direction: column;
-     justify-content: space-around;
+     display: grid;
+     gap: 2em;
      align-items: center;
      padding: 2em;
  }
@@ -215,7 +214,7 @@ body{
 }
  .footer-sections{
      display: grid;
-     gap: 5em;
+     gap: 3em;
      align-self: stretch;
  }
  .footer-section{
@@ -250,6 +249,13 @@ body{
     background-size: cover;
     }
 
+
+.Footer-Heading{
+
+    font-size: 12vw;
+    font-weight: 900;
+
+}
 @media(min-width:600px){
     .pricing{
         grid-template-columns: repeat(3, 1fr);
@@ -277,6 +283,11 @@ body{
     .footer-sections{
         grid-template-columns: repeat(3 ,1fr);
     }
+
+    .Footer-Heading{
+
+        font-size: 6em;
+    
 }
 
 
